@@ -1,8 +1,8 @@
 <h3>Create a contact</h3>
 <%= form_for @contact do |f| %>
-  <p>Enter firstname: <%= f.text_field :firstname, placeholder: "firstname" %></p>
-  <p>Enter lastname: <%= f.text_field :lastname, placeholder: "lastname" %></p>
-  <p>Enter phonenumber: <%= f.text_field :phonenumber, placeholder: "lastname" %></p>
+  <p>Enter firstname: <%= f.text_field :firstname, placeholder: "Firstname" %></p>
+  <p>Enter lastname: <%= f.text_field :lastname, placeholder: "Lastname" %></p>
+  <p>Enter phonenumber: <%= f.text_field :phonenumber, placeholder: "+358 40 123456" %></p>
 
   <%= f.submit %>
 <% end %>

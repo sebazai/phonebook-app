@@ -22,7 +22,7 @@ class ContactsController < ApplicationController
   end
 
   def update
-    @contact.update
+    @contact.update(contact_params)
 
     redirect_to contact_path(@contact)
   end

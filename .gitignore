@@ -1,0 +1,5 @@
+.git
+.dockerignore
+.env
+phonebook/vendor/bundle/
+phonebook/tmp/

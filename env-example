@@ -1,0 +1,4 @@
+SECRET_TOKEN=VerySecretToken
+
+DATABASE_URL=postgresql://phonebook:test_db_password@postgres:5432/phonebook?encoding=utf8&pool=5&timeout=5000
+CACHE_URL=redis://redis:6379/0

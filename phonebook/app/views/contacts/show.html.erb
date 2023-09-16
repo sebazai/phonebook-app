@@ -5,3 +5,9 @@
 <%= @contact.lastname %>
 <h2>Phonenumber:</h2> 
 <%= @contact.phonenumber %>
+
+<div>
+<%= link_to "All contacts", contacts_path, method: :get %>
+</div>
+<%= button_to "Edit contact", edit_contact_path(@contact), method: :get %>
+<%= button_to 'Delete contact', contact_path(@contact), method: 'delete', data: { confirm: 'Are you sure you want to permanently delete this contact?' } %>

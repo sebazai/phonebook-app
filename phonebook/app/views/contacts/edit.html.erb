@@ -1,0 +1,9 @@
+
+<h3>Edit contact</h3>
+<%= form_for @contact do |f| %>
+  <p>Firstname: <%= f.text_field :firstname %></p>
+  <p>Lastname: <%= f.text_field :lastname %></p>
+  <p>Phonenumber: <%= f.text_field :phonenumber %></p>
+
+  <%= f.submit %>
+<% end %>

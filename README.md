@@ -1,24 +1,16 @@
-# README
+# Phonebook app
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+CRUD App for managing your phonebook.
 
-Things you may want to cover:
+## Requirements
 
-* Ruby version
+- Docker (tested with v20.10.16)
+- Docker-compose (tested with v2.6.0)
 
-* System dependencies
+## Starting service
 
-* Configuration
+Run `docker-compose up --build`, should run on localhost:3000
 
-* Database creation
+## First time setup
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Run `docker-compose run phonebook rake db:create`

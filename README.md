@@ -1,6 +1,8 @@
 # Phonebook app
 
-CRUD App for managing your phonebook.
+App for managing your contacts. Tested with MACBook pro M1, aarch.
+
+Persists your contacts if you decide to close the environment.
 
 ## Requirements
 
@@ -9,8 +11,13 @@ CRUD App for managing your phonebook.
 
 ## Starting service
 
-Run `docker-compose up --build`, should run on localhost:3000
+Clone repository.  
+Navigate to root.  
+Run `cp env-example .env`  
+Run `docker-compose up --build`
 
-## First time setup
+### First time setup
 
-Run `docker-compose run phonebook rake db:create`
+In the root of repo, run following commands
+
+Run `docker-compose run phonebook rake db:setup`

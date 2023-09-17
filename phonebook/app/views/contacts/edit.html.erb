@@ -1,6 +1,8 @@
 
 <h3>Edit contact</h3>
 <%= form_for @contact do |f| %>
+  <%= render 'shared/error_messages', object: f.object %> 
+
   <p>Firstname: <%= f.text_field :firstname %></p>
   <p>Lastname: <%= f.text_field :lastname %></p>
   <p>Phonenumber: <%= f.text_field :phonenumber %></p>

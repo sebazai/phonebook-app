@@ -8,4 +8,4 @@ COPY phonebook/ .
 RUN gem install rails bundler
 RUN bundle install
 
-CMD bundle exec puma
+CMD ["rails", "server", "-b", "0.0.0.0"]
